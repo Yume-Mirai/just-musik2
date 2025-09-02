@@ -56,7 +56,7 @@ const Sidebar = ({ isOpen }) => {
         </nav>
 
         <div className="sidebar-footer">
-          <p>JustSpotify</p>
+          <p>JustMusik</p>
           <small>© 2024 Music Platform</small>
         </div>
       </div>

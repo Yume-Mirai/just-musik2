@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>JustSpotify</h3>
+          <h3>JustMusik</h3>
           <p>Your personal music streaming platform</p>
         </div>
 
@@ -40,7 +40,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2024 JustSpotify. All rights reserved.</p>
+        <p>&copy; 2024 JustMusik. All rights reserved.</p>
       </div>
     </footer>
   )

@@ -15,8 +15,45 @@
 
 .library-header h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: #FFFFFF;
   margin: 0;
+  font-weight: 800;
+  background: linear-gradient(135deg, #FF3CAC 0%, #1E90FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sort-select, .filter-select {
+  background: rgba(40, 40, 40, 0.9);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.sort-select:focus, .filter-select:focus {
+  outline: none;
+  border-color: #FF3CAC;
+  background: rgba(60, 60, 60, 0.95);
+  box-shadow: 0 0 10px rgba(255, 60, 172, 0.3);
+}
+
+.sort-select:hover, .filter-select:hover {
+  background: rgba(60, 60, 60, 0.95);
+  border-color: rgba(255, 60, 172, 0.5);
 }
 
 .songs-section {

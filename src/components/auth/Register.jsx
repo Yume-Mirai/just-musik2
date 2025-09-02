@@ -59,7 +59,7 @@ const Register = () => {
   return (
     <div className="auth-container">
       <div className="auth-form">
-        <h2>Register for JustSpotify</h2>
+        <h2>Register for JustMusik</h2>
 
         {error && <div className="error-message">{error}</div>}
 

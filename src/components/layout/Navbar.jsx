@@ -28,7 +28,7 @@ const Navbar = ({ sidebarOpen, setSidebarOpen }) => {
       <div className="navbar-container">
         <div className="navbar-left">
           <Link to="/" className="navbar-logo">
-            <span className="logo-text">JustSpotify</span>
+            <span className="logo-text">JustMusik</span>
           </Link>
         </div>
 

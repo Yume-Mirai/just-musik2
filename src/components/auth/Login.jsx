@@ -45,7 +45,7 @@ const Login = () => {
   return (
     <div className="auth-container">
       <div className="auth-form">
-        <h2>Login to JustSpotify</h2>
+        <h2>Login to JustMusik</h2>
         
         {error && <div className="error-message">{error}</div>}
         
