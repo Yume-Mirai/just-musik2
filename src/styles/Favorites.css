@@ -1,0 +1,91 @@
+.favorites {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.favorites-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.favorites-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.favorites-header p {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0;
+}
+
+.favorites-content {
+  margin-bottom: 2rem;
+}
+
+.empty-favorites {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.empty-favorites h2 {
+  font-size: 2rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.empty-favorites p {
+  font-size: 1.1rem;
+  color: #888;
+  margin: 0;
+}
+
+.favorites-stats {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.favorites-stats p {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0;
+}
+
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .favorites {
+    padding: 1rem;
+  }
+
+  .favorites-header h1 {
+    font-size: 2rem;
+  }
+
+  .empty-favorites {
+    padding: 2rem 1rem;
+  }
+
+  .empty-favorites h2 {
+    font-size: 1.5rem;
+  }
+}

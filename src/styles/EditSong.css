@@ -1,0 +1,52 @@
+/* Edit Song Page - Modern Dark Theme */
+.edit-song-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.edit-song-container .song-form-container {
+  margin-top: 0;
+}
+
+.error-message {
+  background: rgba(244, 67, 54, 0.2);
+  color: #EF5350;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid rgba(244, 67, 54, 0.3);
+  backdrop-filter: blur(10px);
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.error-message .back-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #FF3CAC 0%, #1E90FF 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.error-message .back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 60, 172, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .edit-song-container {
+    padding: 1rem;
+  }
+
+  .error-message {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+}

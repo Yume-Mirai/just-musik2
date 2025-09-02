@@ -1,0 +1,150 @@
+.upload-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.upload-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.upload-header h1 {
+  font-size: 3rem;
+  color: #FFFFFF;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #FF3CAC 0%, #1E90FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.upload-header p {
+  font-size: 1.2rem;
+  color: #B0B0B0;
+  margin: 0;
+  font-weight: 400;
+}
+
+.access-denied {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.access-denied-content {
+  background: rgba(40, 40, 40, 0.95);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+}
+
+.access-denied-content h1 {
+  font-size: 2.5rem;
+  color: #EF5350;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.access-denied-content p {
+  font-size: 1.1rem;
+  color: #B0B0B0;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem 2rem;
+  font-size: 1.3rem;
+  color: #E0E0E0;
+  background: rgba(40, 40, 40, 0.95);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  margin: 2rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .upload-page {
+    padding: 1.5rem;
+  }
+
+  .upload-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .upload-header p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .upload-page {
+    padding: 1rem;
+  }
+
+  .upload-header {
+    margin-bottom: 2rem;
+    padding: 1.5rem 0;
+  }
+
+  .upload-header h1 {
+    font-size: 2rem;
+  }
+
+  .upload-header p {
+    font-size: 1rem;
+  }
+
+  .access-denied-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .access-denied-content h1 {
+    font-size: 2rem;
+  }
+
+  .loading {
+    padding: 3rem 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .upload-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .upload-header p {
+    font-size: 0.95rem;
+  }
+
+  .access-denied-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .access-denied-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .loading {
+    padding: 2rem 1rem;
+    font-size: 1rem;
+  }
+}

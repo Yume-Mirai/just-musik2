@@ -1,0 +1,203 @@
+/* Song Form - Modern Dark Theme */
+.song-form-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.song-form {
+  background: rgba(40, 40, 40, 0.95);
+  backdrop-filter: blur(20px);
+  padding: 3rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.song-form h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #FFFFFF;
+  font-size: 2.2rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #FF3CAC 0%, #1E90FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.3px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="url"] {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  font-size: 1rem;
+  background: rgba(60, 60, 60, 0.8);
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group input[type="url"]:focus {
+  outline: none;
+  border-color: #FF3CAC;
+  background: rgba(80, 80, 80, 0.9);
+  box-shadow: 0 0 20px rgba(255, 60, 172, 0.4);
+}
+
+.form-group input[type="text"]::placeholder,
+.form-group input[type="number"]::placeholder,
+.form-group input[type="url"]::placeholder {
+  color: #A0A0A0;
+}
+
+.form-group input[type="file"] {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-group input[type="file"]:hover {
+  border-color: #1E90FF;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.form-group input[type="file"]::-webkit-file-upload-button {
+  background: linear-gradient(135deg, #FF3CAC 0%, #1E90FF 100%);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.form-group input[type="file"]::-webkit-file-upload-button:hover {
+  transform: scale(1.05);
+}
+
+.file-info {
+  display: block;
+  margin-top: 0.5rem;
+  color: #CCCCCC;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.file-selected {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: rgba(76, 175, 80, 0.2);
+  color: #81C784;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, #FF3CAC 0%, #1E90FF 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.submit-button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(255, 60, 172, 0.4);
+}
+
+.submit-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.error-message {
+  background: rgba(244, 67, 54, 0.2);
+  color: #EF5350;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(244, 67, 54, 0.3);
+  text-align: center;
+  font-weight: 600;
+}
+
+.success-message {
+  background: rgba(76, 175, 80, 0.2);
+  color: #81C784;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .song-form-container {
+    padding: 1rem;
+  }
+
+  .song-form {
+    padding: 2rem;
+  }
+
+  .song-form h2 {
+    font-size: 1.8rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .submit-button {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+}
