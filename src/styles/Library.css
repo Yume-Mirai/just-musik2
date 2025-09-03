@@ -110,6 +110,30 @@
     font-size: 2rem;
   }
 
+  /* Mobile Controls Layout */
+  .controls {
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .controls > * {
+    width: 100%;
+  }
+
+  .controls > .filter-select,
+  .controls > .sort-select {
+    width: 48%;
+  }
+
+  .controls .filter-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+  }
+
   .section-header h2 {
     font-size: 1.3rem;
   }

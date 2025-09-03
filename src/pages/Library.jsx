@@ -154,17 +154,19 @@ const Library = () => {
         <h1>Your Music Library</h1>
         <div className="controls">
           <SearchBar onSearch={handleSearch} />
-          <select value={selectedGenre} onChange={(e) => { setSelectedGenre(e.target.value); setCurrentPage(1); }} className="filter-select">
-            <option value="">All Genres</option>
-            {genres.map(genre => (
-              <option key={genre} value={genre}>{genre}</option>
-            ))}
-          </select>
-          <select value={sortBy} onChange={(e) => { setSortBy(e.target.value); setCurrentPage(1); }} className="sort-select">
-            <option value="title">Sort by Title</option>
-            <option value="artist">Sort by Artist</option>
-            <option value="genre">Sort by Genre</option>
-          </select>
+          <div className="filter-row">
+            <select value={selectedGenre} onChange={(e) => { setSelectedGenre(e.target.value); setCurrentPage(1); }} className="filter-select">
+              <option value="">All Genres</option>
+              {genres.map(genre => (
+                <option key={genre} value={genre}>{genre}</option>
+              ))}
+            </select>
+            <select value={sortBy} onChange={(e) => { setSortBy(e.target.value); setCurrentPage(1); }} className="sort-select">
+              <option value="title">Sort by Title</option>
+              <option value="artist">Sort by Artist</option>
+              <option value="genre">Sort by Genre</option>
+            </select>
+          </div>
         </div>
       </div>
 
