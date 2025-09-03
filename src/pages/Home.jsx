@@ -44,9 +44,9 @@ const Home = () => {
   }
 
   const sortSongs = () => {
-    let filtered = songs
+    let filtered = filteredSongs.length > 0 ? filteredSongs : songs
     if (selectedGenre) {
-      filtered = songs.filter(song => song.genre === selectedGenre)
+      filtered = (filteredSongs.length > 0 ? filteredSongs : songs).filter(song => song.genre === selectedGenre)
     }
 
     const sorted = [...filtered].sort((a, b) => {
@@ -94,6 +94,12 @@ const Home = () => {
     })
     setFilteredSongs(sorted)
     setCurrentPage(1) // Reset to first page when searching
+
+    // Update pagination for the filtered results
+    const startIndex = 0 // Since we reset to page 1
+    const endIndex = startIndex + itemsPerPage
+    const paginated = sorted.slice(startIndex, endIndex)
+    setPaginatedSongs(paginated)
   }
 
   const handlePageChange = (page) => {
