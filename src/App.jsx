@@ -17,7 +17,7 @@ import './styles/App.css'
 
 function App() {
   const { currentUser } = useAuth()
-  const [sidebarOpen, setSidebarOpen] = useState(true)
+  const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
     <div className="app">
