@@ -150,11 +150,88 @@
 @media (max-width: 768px) {
   .search-bar {
     max-width: 100%;
+    width: 100%;
+  }
+
+  .search-input {
+    padding: 1rem 3rem 1rem 3.5rem;
+    font-size: 1rem;
+    min-height: 48px; /* Better touch target */
+  }
+
+  .search-icon {
+    left: 1.25rem;
+    font-size: 1.2rem;
+  }
+
+  .clear-button {
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
+  .search-loading {
+    right: 3.5rem;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar {
+    width: 100%;
+    margin: 0 0.5rem;
+  }
+
+  .search-input {
+    padding: 1rem 3rem 1rem 3.5rem;
+    font-size: 1rem;
+    min-height: 48px;
+    width: 100%;
+  }
+
+  .search-icon {
+    left: 1.25rem;
+    font-size: 1.2rem;
+  }
+
+  .clear-button {
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    font-size: 1.1rem;
+  }
+
+  .search-loading {
+    right: 3.5rem;
+    width: 20px;
+    height: 20px;
+  }
+
+  .search-suggestions {
+    margin-top: 0.5rem;
+    border-radius: 16px;
+    left: 0.5rem;
+    right: 0.5rem;
+    width: auto;
+  }
+
+  .search-suggestion-item {
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .search-bar {
+    margin: 0 0.25rem;
   }
 
   .search-input {
     padding: 0.875rem 2.5rem 0.875rem 3rem;
-    font-size: 1rem;
+    font-size: 0.95rem;
+    min-height: 44px;
   }
 
   .search-icon {
@@ -174,58 +251,15 @@
     width: 18px;
     height: 18px;
   }
-}
-
-@media (max-width: 480px) {
-  .search-input {
-    padding: 0.75rem 2rem 0.75rem 2.5rem;
-    font-size: 0.95rem;
-  }
-
-  .search-icon {
-    left: 0.875rem;
-    font-size: 1rem;
-  }
-
-  .clear-button {
-    right: 0.5rem;
-    width: 28px;
-    height: 28px;
-    font-size: 0.9rem;
-  }
-
-  .search-loading {
-    right: 2.5rem;
-    width: 16px;
-    height: 16px;
-  }
 
   .search-suggestions {
     margin-top: 0.25rem;
-    border-radius: 12px;
+    left: 0.25rem;
+    right: 0.25rem;
   }
 
   .search-suggestion-item {
     padding: 0.875rem 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .search-bar {
-    max-width: 100%;
-  }
-
-  .search-input {
-    padding: 0.6rem 0.8rem 0.6rem 2.5rem;
-    font-size: 0.9rem;
-  }
-
-  .search-icon {
-    left: 0.8rem;
-    font-size: 0.9rem;
-  }
-
-  .clear-button {
-    right: 0.8rem;
+    font-size: 0.95rem;
   }
 }

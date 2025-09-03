@@ -12,7 +12,7 @@ const SearchBar = ({ onSearch, placeholder = "Search songs..." }) => {
   const handleChange = (e) => {
     const value = e.target.value
     setQuery(value)
-    onSearch(value)
+    // Search will only trigger on form submit (Enter key)
   }
 
   const handleClear = () => {
